@@ -30,32 +30,32 @@ const cases = [
 
 export const CaseStudies: React.FC = () => {
   return (
-    <section className="py-24 border-y border-white/5 bg-[#111]/30 relative">
+    <section className="py-16 md:py-24 border-y border-white/5 bg-[#111]/30 relative">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="font-mono text-[10px] tracking-widest text-slate-500 uppercase mb-4">03 // Proof of Work</h2>
-        <h3 className="font-light text-4xl text-white mb-16">High-Stakes Case Studies</h3>
+        <h3 className="font-light text-3xl md:text-4xl text-white mb-12 md:mb-16">High-Stakes Case Studies</h3>
 
         <div className="space-y-6">
           {cases.map((item, idx) => (
-            <div key={idx} className="grid md:grid-cols-[250px_1fr] gap-6 border-l border-white/10 bg-[#0a0a0a]/50 p-6 md:p-8 hover:bg-[#111] transition-colors">
-              <div className="border-b md:border-b-0 md:border-r border-white/5 pb-6 md:pb-0 md:pr-6 flex flex-col items-start gap-4">
-                <item.icon className="w-5 h-5 text-indigo-400" />
+            <div key={idx} className="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-6 border-l border-white/10 bg-[#0a0a0a]/50 p-6 md:p-8 hover:bg-[#111] transition-colors">
+              <div className="border-b md:border-b-0 md:border-r border-white/5 pb-6 md:pb-0 md:pr-6 flex flex-row md:flex-col items-center md:items-start gap-4">
+                <item.icon className="w-5 h-5 text-indigo-400 shrink-0" />
                 <div>
-                  <div className="font-mono text-[10px] text-slate-500 mb-1 tracking-widest uppercase">{item.sector}</div>
-                  <div className="font-medium text-lg text-white">{item.title}</div>
+                  <div className="font-mono text-[9px] md:text-[10px] text-slate-500 mb-1 tracking-widest uppercase">{item.sector}</div>
+                  <div className="font-medium text-base md:text-lg text-white">{item.title}</div>
                 </div>
               </div>
               <div className="grid sm:grid-cols-3 gap-6 font-light">
-                <div>
-                  <h5 className="font-mono text-[9px] tracking-widest text-slate-500 mb-2 uppercase">Challenge</h5>
+                <div className="space-y-2">
+                  <h5 className="font-mono text-[9px] tracking-widest text-slate-500 uppercase">Challenge</h5>
                   <p className="text-sm text-slate-400 leading-relaxed">{item.challenge}</p>
                 </div>
-                <div>
-                  <h5 className="font-mono text-[9px] tracking-widest text-slate-500 mb-2 uppercase">Action</h5>
+                <div className="space-y-2">
+                  <h5 className="font-mono text-[9px] tracking-widest text-slate-500 uppercase">Action</h5>
                   <p className="text-sm text-slate-400 leading-relaxed">{item.action}</p>
                 </div>
-                <div>
-                  <h5 className="font-mono text-[9px] tracking-widest text-indigo-400 mb-2 uppercase">Result</h5>
+                <div className="space-y-2">
+                  <h5 className="font-mono text-[9px] tracking-widest text-indigo-400 uppercase">Result</h5>
                   <p className="text-sm text-white">{item.result}</p>
                 </div>
               </div>

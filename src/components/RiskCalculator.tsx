@@ -79,17 +79,17 @@ export const RiskCalculator: React.FC = () => {
   const recommendation = getRecommendation();
 
   return (
-    <section className="py-24 max-w-4xl mx-auto px-6">
+    <section className="py-16 md:py-24 max-w-4xl mx-auto px-6">
       <div className="bg-[#111] border border-white/5 rounded-2xl overflow-hidden shadow-2xl relative">
         <div className="h-1 bg-gradient-to-r from-indigo-500 to-purple-600 w-full" />
         
-        <div className="p-8 md:p-12">
+        <div className="p-6 md:p-12">
           {!showResult ? (
-            <div className="space-y-8">
-              <div className="flex justify-between items-end">
+            <div className="space-y-6 md:space-y-8">
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
                 <div>
                   <h2 className="font-mono text-[10px] tracking-widest text-indigo-400 uppercase mb-2">Diagnostic Tool</h2>
-                  <h3 className="text-3xl font-light text-white">Resilience Calculator</h3>
+                  <h3 className="text-2xl md:text-3xl font-light text-white">Resilience Calculator</h3>
                 </div>
                 <div className="font-mono text-[10px] text-slate-500 uppercase tracking-widest">
                   Step {step + 1} of {questions.length}
@@ -104,7 +104,7 @@ export const RiskCalculator: React.FC = () => {
                 />
               </div>
 
-              <div className="py-8">
+              <div className="py-4 md:py-8">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={step}
@@ -113,7 +113,7 @@ export const RiskCalculator: React.FC = () => {
                     exit={{ opacity: 0, x: -20 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <h4 className="text-xl text-slate-200 mb-8 font-light leading-relaxed">
+                    <h4 className="text-lg md:text-xl text-slate-200 mb-6 md:mb-8 font-light leading-relaxed">
                       {questions[step].text}
                     </h4>
                     <div className="grid gap-3">
@@ -123,7 +123,7 @@ export const RiskCalculator: React.FC = () => {
                           onClick={() => handleOptionSelect(opt.value)}
                           className="w-full text-left p-4 border border-white/5 bg-white/5 hover:bg-indigo-500/10 hover:border-indigo-500/30 transition-all group flex items-center justify-between rounded-sm"
                         >
-                          <span className="text-slate-300 group-hover:text-white transition-colors">{opt.label}</span>
+                          <span className="text-sm md:text-base text-slate-300 group-hover:text-white transition-colors">{opt.label}</span>
                           <ChevronRight className="w-4 h-4 text-slate-600 group-hover:text-indigo-400 group-hover:translate-x-1 transition-all" />
                         </button>
                       ))}
@@ -136,42 +136,45 @@ export const RiskCalculator: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="text-center space-y-8 py-4"
+              className="text-center space-y-6 md:space-y-8 py-4"
             >
               <div className="flex justify-center">
                 <div className="relative">
                    <div className="absolute inset-0 bg-indigo-500/20 blur-3xl rounded-full" />
                    {percentage > 70 ? (
-                     <ShieldCheck className="w-20 h-20 text-indigo-400 relative z-10" />
+                     <ShieldCheck className="w-16 h-16 md:w-20 md:h-20 text-indigo-400 relative z-10" />
                    ) : (
-                     <ShieldAlert className="w-20 h-20 text-indigo-500/60 relative z-10" />
+                     <ShieldAlert className="w-16 h-16 md:w-20 md:h-20 text-indigo-500/60 relative z-10" />
                    )}
                 </div>
               </div>
 
               <div>
-                <h3 className="text-4xl font-light text-white mb-2">Score: {Math.round(percentage)}%</h3>
+                <h3 className="text-3xl md:text-4xl font-light text-white mb-2">Score: {Math.round(percentage)}%</h3>
                 <p className="font-mono text-[10px] tracking-widest text-slate-500 uppercase">Maturity Quotient</p>
               </div>
 
-              <div className="max-w-md mx-auto p-6 border border-white/10 bg-[#0a0a0a] rounded-lg">
-                <h4 className="text-indigo-400 font-mono text-xs uppercase tracking-widest mb-3">Recommended Path</h4>
-                <p className="text-white font-medium text-lg mb-4">{recommendation.tier}</p>
-                <p className="text-sm text-slate-400 font-light leading-relaxed">
+              <div className="max-w-md mx-auto p-5 md:p-6 border border-white/10 bg-[#0a0a0a] rounded-lg">
+                <h4 className="text-indigo-400 font-mono text-[10px] md:text-xs uppercase tracking-widest mb-3">Recommended Path</h4>
+                <p className="text-white font-medium text-base md:text-lg mb-4">{recommendation.tier}</p>
+                <p className="text-xs md:text-sm text-slate-400 font-light leading-relaxed">
                   {recommendation.desc}
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 md:pt-8">
                  <button 
-                  onClick={() => window.location.href = "#services"}
-                  className="bg-white text-[#0a0a0a] px-8 py-3 font-medium flex items-center justify-center gap-2 hover:bg-slate-200 transition-colors"
+                  onClick={() => {
+                    const el = document.getElementById('services');
+                    el?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="bg-white text-[#0a0a0a] px-6 md:px-8 py-3 font-medium flex items-center justify-center gap-2 hover:bg-slate-200 transition-colors text-sm md:text-base"
                  >
-                   View Solution Details <BarChart3 className="w-4 h-4" />
+                   View Solutions <BarChart3 className="w-4 h-4" />
                  </button>
                  <button 
                   onClick={reset}
-                  className="border border-white/10 text-slate-400 px-8 py-3 font-medium flex items-center justify-center gap-2 hover:bg-white/5 transition-colors"
+                  className="border border-white/10 text-slate-400 px-6 md:px-8 py-3 font-medium flex items-center justify-center gap-2 hover:bg-white/5 transition-colors text-sm md:text-base"
                  >
                    Retake Diagnostic <RefreshCw className="w-4 h-4" />
                  </button>
