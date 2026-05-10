@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plane, Train, BarChart } from 'lucide-react';
+import { Plane, BarChart, Activity } from 'lucide-react';
 
 const cases = [
   {
