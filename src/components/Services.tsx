@@ -4,37 +4,40 @@ import { CheckCircle2 } from 'lucide-react';
 const tiers = [
   {
     tier: "Tier 1",
-    title: "Compliance Foundation",
+    title: "Executive Advisory",
     features: [
-      "ISO 9001 Readiness Roadmaps",
-      "SOP Development & Audits",
-      "Regulatory Health Checks"
+      "GRC Transformation Strategy",
+      "ISO Certification Readiness",
+      "Audit Governance Strategy",
+      "Board-Level Risk Reporting"
     ],
-    investment: "$5k - $8k",
-    unit: "USD"
+    investment: "$800 – $2,200",
+    unit: "Daily"
   },
   {
     tier: "Tier 2",
-    title: "Strategic Resilience",
+    title: "Leadership Coaching",
     features: [
-      "GCAA/Rail Aviation Readiness",
-      "Integrated Management Systems (IMS)",
-      "Enterprise Risk Management (ERM) Frameworks"
+      "Change Leadership Frameworks",
+      "Regulatory Coaching for Heads",
+      "Building Quality Culture",
+      "Functional Governance Setup"
     ],
-    investment: "$15k - $25k",
-    unit: "USD",
+    investment: "$950 – $1,500",
+    unit: "Session",
     recommended: true
   },
   {
     tier: "Tier 3",
-    title: "Fractional CCO",
+    title: "Capability Development",
     features: [
-      "Executive Board Advisory",
-      "Digital Governance & Strategy Integration",
-      "ISO 55001 Advanced Policy"
+      "Bespoke Corporate Training",
+      "Root Cause Analysis Workshops",
+      "ISO Standards Training",
+      "Risk Management Seminars"
     ],
-    investment: "$7k - $12k",
-    unit: "/mo USD"
+    investment: "$700 – $1,200",
+    unit: "Daily"
   }
 ];
 

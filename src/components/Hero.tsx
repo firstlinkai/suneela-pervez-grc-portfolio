@@ -26,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({ onAuditClick }) => {
         </h1>
         
         <p className="text-base md:text-xl text-slate-400 max-w-2xl font-light leading-relaxed mb-8 md:mb-10 border-l px-4 border-indigo-500/30">
-          Global Lead in Governance, Risk, and Compliance (GRC). Specializing in high-stakes, zero-fail infrastructure, Aviation (GCAA), and Rail.
+          Global Lead in Governance, Risk, and Compliance (GRC). Specializing in mission-critical infrastructure, Aviation (GCAA), and Rail.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">

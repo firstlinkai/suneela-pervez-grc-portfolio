@@ -2,10 +2,10 @@ import React from 'react';
 import { Layers, TowerControl, Activity, Server } from 'lucide-react';
 
 const pillars = [
-  { icon: Layers, title: "Management Systems (ISO)", desc: "Architecting global standards frameworks.", tags: "ISO 9001 • ISO 14001 • ISO 45001 • ISO 55001 • ISO 27001" },
-  { icon: TowerControl, title: "Sector Specialist", desc: "Navigating complex regulatory webs in zero-tolerance environments. Aviation, Railway, and Critical Infrastructure." },
-  { icon: Activity, title: "Operations", desc: "Lean Six Sigma Green Belt. Specialized in targeted Process Optimization and definitive Root Cause Analysis." },
-  { icon: Server, title: "Digital Governance", desc: "Bridging deep technical literacy and software architecture with high-level corporate policy and critical risk oversight." }
+  { icon: Layers, title: "Strategic Quality Governance", desc: "Design and implementation of enterprise quality strategies aligned with corporate risk appetite and performance outcomes." },
+  { icon: TowerControl, title: "Regulatory Mastery", desc: "Deep expertise in GCAA (Aviation) and Road/Transport (Rail) regulatory environments, managing certification readiness.", tags: "GCAA • RTA • ISO 55001" },
+  { icon: Activity, title: "Operational Excellence", desc: "Utilizing Lean Six Sigma and Root Cause Analysis (RCA) to eliminate process waste and improve service delivery." },
+  { icon: Server, title: "Risk Architecture", desc: "Implementing the 'Three Lines of Defence' model and enterprise-wide risk management (ERM) frameworks." }
 ];
 
 export const Expertise: React.FC = () => {

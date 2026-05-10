@@ -3,28 +3,28 @@ import { Plane, Train, BarChart } from 'lucide-react';
 
 const cases = [
   {
-    icon: Plane,
-    sector: "GCAA / ATC",
-    title: "Aviation Regulatory Integrity",
-    challenge: "Maintaining 100% compliance in a zero-tolerance Air Traffic Control environment.",
-    action: "Led enterprise audits and strict GCAA Post Holder readiness programs.",
-    result: "100% audit closure rate and flawless regulatory standing maintained."
-  },
-  {
-    icon: Train,
-    sector: "Dubai Metro",
-    title: "Infrastructure Asset Governance",
-    challenge: "Governing holistic risk for one of the world's largest automated rail systems.",
-    action: "Implemented ISO 55001 Asset Management and Risk-Based Internal Auditing structures.",
-    result: "Institutionalized systemic reliability and streamlined organizational revenue assurance."
-  },
-  {
     icon: BarChart,
-    sector: "Corporate",
-    title: "Lean Transformation",
-    challenge: "Resolving operational waste and inefficiency across multi-sector corporate portfolios.",
-    action: "Strategically deployed Six Sigma methodologies to map and refine execution workflows.",
-    result: "Documented distinct measurable increases in process efficiency and global audit readiness."
+    sector: "Governance",
+    title: "Assurance Transformation",
+    challenge: "Redesigned a fragmented divisional audit program across 24 contracts in 3 countries.",
+    action: "Introduced risk-based sampling and embedded the Three Lines of Defence model.",
+    result: "Reduced non-conformities by 55% and maintained 100% on-time audit closure for 5 years."
+  },
+  {
+    icon: Plane,
+    sector: "Aviation (GCAA)",
+    title: "Air Traffic Control Quality",
+    challenge: "Safety-critical ATC operations at RAK Airport requiring strict regulatory alignment.",
+    action: "Established audit frameworks and briefed CEO/Accountable Managers on regulatory risks.",
+    result: "Achieved 100% finding closure; moved from 'conditional' to 'fully compliant'."
+  },
+  {
+    icon: Activity,
+    sector: "Infrastructure",
+    title: "Enterprise Risk Mitigation",
+    challenge: "Fragmented risk frameworks across three major business units.",
+    action: "Introduced harmonized risk registers and Quarterly Compliance Assurance forums.",
+    result: "30% reduction in high-rated operational risks and eliminated all 'red' control ratings."
   }
 ];
 

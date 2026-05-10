@@ -22,13 +22,16 @@ export const About: React.FC = () => {
             "I don't just find problems; I build the systems that prevent them."
           </h3>
           <p className="text-slate-400 leading-relaxed font-light text-sm md:text-base">
-            With over 15+ years of experience in "Zero-Fail" environments, maintaining operations isn't enough. It's about engineering a culture of compliance that scales with revenue.
+            Senior Quality and Compliance Transformation Leader with 15+ years of experience delivering enterprise-wide strategy across aviation, transportation, and complex service operations.
+          </p>
+          <p className="text-slate-400 leading-relaxed font-light text-sm md:text-base">
+            Expert in transforming compliance-driven organizations into high-performing, quality-led operations by embedding integrated management systems (IMS) and strengthening governance structures.
           </p>
           <div className="p-5 md:p-6 border border-white/5 bg-[#111] rounded-sm mt-6 relative group">
             <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-indigo-500 to-purple-600 transition-colors" />
             <h4 className="font-mono text-[10px] tracking-widest text-white mb-2 uppercase">The Bridge</h4>
             <p className="text-xs md:text-sm text-slate-400 font-light leading-relaxed">
-              Combining deep technical literacy with strategic business acumen. Delivering the unique capability to govern complex technical systems while protecting P&L and ensuring boardroom alignment.
+              Bridging the gap between technical system integrity (MCS) and strategic business objectives (MBA) to reduce operational risk exposure and enhance organizational performance.
             </p>
           </div>
         </motion.div>

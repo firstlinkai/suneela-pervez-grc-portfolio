@@ -6,7 +6,7 @@ import { Expertise } from './components/Expertise';
 import { CaseStudies } from './components/CaseStudies';
 import { Services } from './components/Services';
 import { RiskCalculator } from './components/RiskCalculator';
-import { MarketIcons } from './components/MarketIcons';
+import { Sectors } from './components/Sectors';
 import { Footer } from './components/Footer';
 import { AuditModal } from './components/AuditModal';
 
@@ -28,10 +28,10 @@ export default function App() {
         <Hero onAuditClick={openModal} />
         <About />
         <Expertise />
+        <Sectors />
         <CaseStudies />
         <RiskCalculator />
         <Services />
-        <MarketIcons />
       </main>
 
       <Footer />
