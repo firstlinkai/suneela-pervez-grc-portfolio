@@ -54,7 +54,7 @@ export const Hero: React.FC<HeroProps> = ({ onAuditClick }) => {
           <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10 mix-blend-overlay"></div>
           
           <img 
-            src="/profile.jpg" 
+            src="/profile.png" 
             alt="Suneela Pervez" 
             className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
           />
