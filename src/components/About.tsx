@@ -31,7 +31,7 @@ export const About: React.FC = () => {
             <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-indigo-500 to-purple-600 transition-colors" />
             <h4 className="font-mono text-[10px] tracking-widest text-white mb-2 uppercase">The Bridge</h4>
             <p className="text-xs md:text-sm text-slate-400 font-light leading-relaxed">
-              Bridging the gap between technical system integrity (MCS) and strategic business objectives (MBA) to reduce operational risk exposure and enhance organizational performance.
+              Bridging the gap between technical system integrity and strategic business objectives to reduce operational risk exposure and enhance organizational performance.
             </p>
           </div>
         </motion.div>
