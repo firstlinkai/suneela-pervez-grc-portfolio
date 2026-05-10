@@ -3,24 +3,6 @@ import React from 'react';
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#0a0a0a] border-t border-white/5 py-12 relative z-10">
-      <div className="max-w-7xl mx-auto px-6 mb-12">
-        <div className="p-8 border border-white/5 bg-[#111]/30 rounded-sm">
-          <h4 className="font-mono text-[10px] tracking-widest text-indigo-400 mb-6 uppercase">Trusted By Leaders</h4>
-          <p className="text-slate-400 font-light text-sm leading-relaxed max-w-3xl mb-8">
-            Recognized by Serco Middle East CEOs and RTA (Dubai) for outstanding commitment and measurable impact on operational assurance.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center">
-            <a href="mailto:Suneelapervez@gmail.com" className="group">
-              <div className="font-mono text-[9px] text-slate-500 uppercase tracking-widest mb-1">Email</div>
-              <div className="text-white group-hover:text-indigo-400 transition-colors">Suneelapervez@gmail.com</div>
-            </a>
-            <a href="tel:+971555381859" className="group">
-              <div className="font-mono text-[9px] text-slate-500 uppercase tracking-widest mb-1">Phone</div>
-              <div className="text-white group-hover:text-indigo-400 transition-colors">+971 55 5381859</div>
-            </a>
-          </div>
-        </div>
-      </div>
       
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="flex items-center gap-3">
