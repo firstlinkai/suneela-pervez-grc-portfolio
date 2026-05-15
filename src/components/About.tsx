@@ -25,14 +25,22 @@ export const About: React.FC = () => {
             Senior Quality and Compliance Transformation Leader with 15+ years of experience delivering enterprise-wide strategy across aviation, transportation, and complex service operations.
           </p>
           <p className="text-slate-400 leading-relaxed font-light text-sm md:text-base">
-            Expert in transforming compliance-driven organizations into high-performing, quality-led operations by embedding integrated management systems (IMS) and strengthening governance structures.
+            Expert in transforming compliance-driven organizations into high-performing, quality-led operations by embedding integrated management systems (IMS) and providing functional leadership to ~30 Quality and HSE focal points.
           </p>
           <div className="p-5 md:p-6 border border-white/5 bg-[#111] rounded-sm mt-6 relative group">
             <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-indigo-500 to-purple-600 transition-colors" />
             <h4 className="font-mono text-[10px] tracking-widest text-white mb-2 uppercase">The Bridge</h4>
             <p className="text-xs md:text-sm text-slate-400 font-light leading-relaxed">
-              Bridging the gap between technical system integrity and strategic business objectives to reduce operational risk exposure and enhance organizational performance.
+              Bridging the gap between technical system integrity and strategic business objectives to reduce operational risk exposure and enhance organizational performance across 24 contracts in 3 countries.
             </p>
+          </div>
+          <div className="flex flex-wrap gap-x-8 gap-y-4 pt-4 border-t border-white/5">
+            <div className="space-y-1">
+              <div className="font-mono text-[8px] text-slate-500 uppercase tracking-widest">Impact Stats</div>
+              <p className="text-[10px] md:text-xs text-indigo-300 font-light italic">
+                55% fewer non-conformities | 30% fewer high-rated risks
+              </p>
+            </div>
           </div>
         </motion.div>
         
@@ -55,14 +63,14 @@ export const About: React.FC = () => {
                 <path d="M0,95 Q20,95 40,90 T80,60 T100,40" fill="none" className="stroke-white/10" strokeWidth="0.5" strokeDasharray="2,2" />
               </svg>
               <div className="absolute bottom-4 left-4 bg-[#0a0a0a]/80 px-2 py-1 border border-white/5 font-mono text-[9px] md:text-[10px] text-indigo-300 backdrop-blur-md">
-                INCIDENT_RATE: 0.00%
+                REPEAT_FINDINGS: NEAR 0%
               </div>
             </div>
             
             <div className="relative grid grid-cols-3 gap-4 pt-4 border-t border-white/5 z-10">
               <div>
                 <div className="font-mono text-[8px] md:text-[10px] text-slate-500 mb-1">AUDIT</div>
-                <div className="font-light text-lg md:text-xl text-white">100%</div>
+                <div className="font-light text-lg md:text-xl text-white whitespace-nowrap">100% <span className="text-[8px] md:text-[9px] text-slate-500 block">ON-TIME CLOSURE</span></div>
               </div>
               <div>
                 <div className="font-mono text-[8px] md:text-[10px] text-slate-500 mb-1">SECTORS</div>

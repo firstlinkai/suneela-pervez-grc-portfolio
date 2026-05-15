@@ -6,25 +6,25 @@ const cases = [
     icon: BarChart,
     sector: "Governance",
     title: "Assurance Transformation",
-    challenge: "Redesigned a fragmented divisional audit program across 24 contracts in 3 countries.",
-    action: "Introduced risk-based sampling and embedded the Three Lines of Defence model.",
-    result: "Reduced non-conformities by 55% and maintained 100% on-time audit closure for 5 years."
+    challenge: "Redesigned a fragmented divisional audit programme across 24 contracts in 3 countries, operating in safety-critical aviation, rail and FM environments.",
+    action: "As divisional lead, harmonised risk registers, embedded the 'Three Lines of Defence' model, and led ~30 embedded Quality & HSE focal points.",
+    result: "Reduced non-conformities by 55% and maintained 100% on-time audit closure for 5+ years."
   },
   {
     icon: Plane,
     sector: "Aviation (GCAA)",
     title: "Air Traffic Control Quality",
-    challenge: "Safety-critical ATC operations at RAK Airport requiring strict regulatory alignment.",
-    action: "Established audit frameworks and briefed CEO/Accountable Managers on regulatory risks.",
-    result: "Achieved 100% finding closure; moved from 'conditional' to 'fully compliant'."
+    challenge: "Safety-critical ATC operations at RAK Airport requiring strict GCAA regulatory alignment and post-holder readiness.",
+    action: "Established audit frameworks, briefed CEO/Accountable Managers on regulatory risks, and managed vendor evaluations.",
+    result: "Moved from 'conditional' to 'fully compliant' in client vendor assessments, supporting multi-year contract renewals."
   },
   {
     icon: Activity,
     sector: "Infrastructure",
     title: "Enterprise Risk Mitigation",
-    challenge: "Fragmented risk frameworks across three major business units.",
-    action: "Introduced harmonized risk registers and Quarterly Compliance Assurance forums.",
-    result: "30% reduction in high-rated operational risks and eliminated all 'red' control ratings."
+    challenge: "Fragmented risk frameworks across major business units in a two-year period of rapid operational shifts.",
+    action: "Introduced harmonised risk registers and Quarterly Compliance Assurance (RCAG) forums to eliminate 'red' control ratings.",
+    result: "30% reduction in high-rated operational risks and institutionalised reliability across automated rail systems."
   }
 ];
 

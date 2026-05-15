@@ -7,10 +7,10 @@ const questions = [
     id: 1,
     text: "What is your primary industry sector?",
     options: [
-      { label: "Aviation (GCAA/FAA)", value: 10 },
+      { label: "Aviation (GCAA-regulated)", value: 10 },
       { label: "Rail & Infrastructure", value: 8 },
-      { label: "Energy & Utilities", value: 7 },
-      { label: "Financial Services / Other", value: 5 }
+      { label: "Other regulated industries (e.g. energy, utilities, selected financial services)", value: 7 },
+      { label: "Public Sector / Government", value: 6 }
     ]
   },
   {

@@ -6,7 +6,7 @@ const tiers = [
     tier: "Tier 1",
     title: "Institutional Capability & Special Projects",
     focus: "Design and delivery of high-impact training and technical internal control systems.",
-    bestFor: "Entities looking to resolve operational bottlenecks or specialize staff in Root Cause Analysis.",
+    bestFor: "Entities looking to resolve operational bottlenecks or train staff in specialized Root Cause Analysis.",
     features: [
       "Bespoke Corporate Training",
       "ISO 55001 Asset Management Strategy",
@@ -14,8 +14,9 @@ const tiers = [
       "Internal Control Systems Design"
     ],
     engagement: "Fixed-Fee Project / Milestone-Based",
-    investment: "$2,500",
-    unit: "Minimum Entry"
+    investment: "$2,500+",
+    unit: "Typical Investment",
+    outcome: "Eliminate repeat findings in core processes."
   },
   {
     tier: "Tier 2",
@@ -29,9 +30,10 @@ const tiers = [
       "Leadership Quality Culture Setup"
     ],
     engagement: "Structured Program / Monthly Blocks",
-    investment: "$3,500",
-    unit: "Minimum Investment",
-    recommended: true
+    investment: "$3,500+",
+    unit: "Typical Investment",
+    recommended: true,
+    outcome: "Embed resilient governance across leadership layers."
   },
   {
     tier: "Tier 3",
@@ -45,8 +47,9 @@ const tiers = [
       "Three Lines of Defence Model"
     ],
     engagement: "Monthly Strategic Retainer",
-    investment: "$5,000",
-    unit: "Baseline Investment"
+    investment: "$5,000+",
+    unit: "Typical Investment",
+    outcome: "Reduce non-conformities by ~55% in critical areas."
   }
 ];
 
@@ -80,7 +83,7 @@ export const Services: React.FC = () => {
                 <p className="text-xs text-slate-300 font-light leading-relaxed">{tier.focus}</p>
               </div>
               
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-6">
                 {tier.features.map((feature, fIdx) => (
                   <li key={fIdx} className="flex items-start gap-3">
                     <CheckCircle2 className={`w-3.5 h-3.5 shrink-0 mt-0.5 ${tier.recommended ? 'text-indigo-400' : 'text-slate-500'}`} />
@@ -88,6 +91,13 @@ export const Services: React.FC = () => {
                   </li>
                 ))}
               </ul>
+
+              {tier.outcome && (
+                <div className="pt-4 border-t border-white/5">
+                  <div className="font-mono text-[8px] text-indigo-400 uppercase mb-2">Target Outcome</div>
+                  <p className="text-[10px] text-slate-400 italic font-light leading-relaxed">{tier.outcome}</p>
+                </div>
+              )}
             </div>
 
             <div className="pt-6 border-t border-white/5 mt-auto">

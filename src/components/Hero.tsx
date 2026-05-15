@@ -17,7 +17,7 @@ export const Hero: React.FC<HeroProps> = ({ onAuditClick }) => {
       >
         <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 md:mb-8 border border-indigo-500/30 bg-indigo-500/5 rounded-full font-mono text-[9px] md:text-[10px] text-indigo-400 uppercase tracking-widest">
           <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-          Strategic Advisor & Fractional CCO
+          Strategic GRC Advisor & Quality Governance Leader
         </div>
         
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-white leading-[1.1] md:leading-[1.05] mb-6 md:mb-8">
@@ -26,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({ onAuditClick }) => {
         </h1>
         
         <p className="text-base md:text-xl text-slate-400 max-w-2xl font-light leading-relaxed mb-8 md:mb-10 border-l px-4 border-indigo-500/30">
-          Global Lead in Governance, Risk, and Compliance (GRC). Specializing in mission-critical infrastructure, Aviation (GCAA), and Rail.
+          Senior Governance, Risk & Compliance (GRC) leader across aviation, rail and critical infrastructure in the Middle East, with assurance reach into UK and Australia.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">
