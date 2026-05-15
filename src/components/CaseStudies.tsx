@@ -4,36 +4,36 @@ import { Plane, BarChart, Activity } from 'lucide-react';
 const cases = [
   {
     icon: BarChart,
-    sector: "Governance",
-    title: "Assurance Transformation",
-    challenge: "Redesigned a fragmented divisional audit programme across 24 contracts in 3 countries, operating in safety-critical aviation, rail and FM environments.",
-    action: "As divisional lead, harmonised risk registers, embedded the 'Three Lines of Defence' model, and led ~30 embedded Quality & HSE focal points.",
-    result: "Reduced non-conformities by 55% and maintained 100% on-time audit closure for 5+ years."
+    sector: "Infrastructure",
+    title: "Global Rail Governance",
+    challenge: "Transformation of fragmented assurance frameworks across 24 contracts in 3 countries.",
+    action: "Harmonized risk registers and implemented the Three Lines of Defence model across safety-critical operations.",
+    result: "55% reduction in non-conformities and 5 years of zero repeat findings."
   },
   {
     icon: Plane,
     sector: "Aviation (GCAA)",
-    title: "Air Traffic Control Quality",
-    challenge: "Safety-critical ATC operations at RAK Airport requiring strict GCAA regulatory alignment and post-holder readiness.",
-    action: "Established audit frameworks, briefed CEO/Accountable Managers on regulatory risks, and managed vendor evaluations.",
-    result: "Moved from 'conditional' to 'fully compliant' in client vendor assessments, supporting multi-year contract renewals."
+    title: "Aviation Assurance Engagement",
+    challenge: "Safety-critical ATC operations at RAK Airport requiring strict GCAA regulatory alignment.",
+    action: "Acted as Head of Quality (GCAA Post Holder equivalent), established audit frameworks, and managed vendor evaluations.",
+    result: "100% audit closure and transition from 'conditional' to 'fully compliant' standing."
   },
   {
     icon: Activity,
-    sector: "Infrastructure",
-    title: "Enterprise Risk Mitigation",
-    challenge: "Fragmented risk frameworks across major business units in a two-year period of rapid operational shifts.",
-    action: "Introduced harmonised risk registers and Quarterly Compliance Assurance (RCAG) forums to eliminate 'red' control ratings.",
-    result: "30% reduction in high-rated operational risks and institutionalised reliability across automated rail systems."
+    sector: "Corporate GRC",
+    title: "Enterprise Risk Shielding",
+    challenge: "Developing a 'Zero-Fail' system for a large-scale regulated entity facing rapid operational shifts.",
+    action: "Designed an Integrated Management System (IMS) for ISO 9001 and 55001 alignment.",
+    result: "30% reduction in high-rated operational risks and institutionalized quality culture."
   }
 ];
 
 export const CaseStudies: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 border-y border-white/5 bg-[#111]/30 relative">
+    <section className="py-16 md:py-24 border-y border-white/5 bg-black relative">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="font-mono text-[10px] tracking-widest text-slate-500 uppercase mb-4">03 // Proof of Work</h2>
-        <h3 className="font-light text-3xl md:text-4xl text-white mb-12 md:mb-16">High-Stakes Case Studies</h3>
+        <h3 className="font-bold text-3xl md:text-4xl text-white mb-12 md:mb-16 uppercase tracking-tighter">Strategic <span className="text-brand">Engagements</span></h3>
 
         <div className="space-y-6">
           {cases.map((item, idx) => (
@@ -55,8 +55,8 @@ export const CaseStudies: React.FC = () => {
                   <p className="text-sm text-slate-400 leading-relaxed">{item.action}</p>
                 </div>
                 <div className="space-y-2">
-                  <h5 className="font-mono text-[9px] tracking-widest text-indigo-400 uppercase">Result</h5>
-                  <p className="text-sm text-white">{item.result}</p>
+                  <h5 className="font-mono text-[9px] tracking-widest text-brand uppercase">Result</h5>
+                  <p className="text-sm text-white font-bold">{item.result}</p>
                 </div>
               </div>
             </div>

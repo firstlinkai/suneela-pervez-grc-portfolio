@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Menu, X } from 'lucide-react';
+import { ShieldCheck, Menu, X, Link as LinkIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface NavbarProps {
@@ -12,23 +12,23 @@ export const Navbar: React.FC<NavbarProps> = ({ onAuditClick }) => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="fixed w-full z-50 top-0 border-b border-white/5 bg-[#0a0a0a]/80 backdrop-blur-md">
+    <nav className="fixed w-full z-50 top-0 border-b border-white/5 bg-black/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-6 h-6 bg-gradient-to-tr from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
-             <ShieldCheck className="w-3 h-3 text-white" />
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-8 bg-brand rounded-sm flex items-center justify-center">
+             <LinkIcon className="w-5 h-5 text-black" />
           </div>
-          <span className="font-semibold tracking-tight text-white uppercase sm:text-base text-sm">SUNEELA PERVEZ</span>
-          <span className="font-mono text-[9px] text-indigo-400/80 px-2 py-0.5 ml-2 border border-indigo-500/20 rounded-sm hidden lg:inline-flex uppercase tracking-widest">
-            SYS_NODE: GRC
-          </span>
+          <div className="flex flex-col">
+            <span className="font-bold tracking-tighter text-white text-lg leading-none">FIRSTLINK</span>
+            <span className="font-mono text-[10px] text-brand tracking-[0.2em] uppercase leading-none mt-1">Governance</span>
+          </div>
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-6">
           <button 
             onClick={onAuditClick}
-            className="text-[10px] font-mono text-indigo-400 hover:text-indigo-300 transition-colors uppercase tracking-[0.15em]"
+            className="text-[10px] font-mono text-brand hover:text-white transition-colors uppercase tracking-[0.15em]"
           >
             Risk Audit
           </button>
@@ -41,7 +41,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onAuditClick }) => {
         <div className="md:hidden flex items-center gap-4">
           <button 
             onClick={onAuditClick}
-            className="text-[10px] font-mono text-indigo-400 uppercase tracking-widest"
+            className="text-[10px] font-mono text-brand uppercase tracking-widest"
           >
             Audit
           </button>
@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onAuditClick }) => {
               </a>
               <button 
                 onClick={() => { onAuditClick(); setIsMenuOpen(false); }}
-                className="text-sm font-mono uppercase tracking-widest text-indigo-400 text-left"
+                className="text-sm font-mono uppercase tracking-widest text-brand text-left"
               >
                 Schedule Audit
               </button>

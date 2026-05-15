@@ -17,10 +17,10 @@ export default function App() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-slate-300 font-sans relative overflow-x-hidden">
-      {/* Background radial gradient to give it depth */}
-      <div className="fixed inset-0 pointer-events-none bg-[radial-gradient(circle_at_50%_0%,rgba(79,70,229,0.15),transparent_70%)] opacity-80" />
-      <div className="fixed inset-0 pointer-events-none bg-[radial-gradient(circle_at_100%_100%,rgba(79,70,229,0.08),transparent_50%)] opacity-60" />
+    <div className="min-h-screen bg-black text-white font-sans relative overflow-x-hidden">
+      {/* Background radial gradient for depth */}
+      <div className="fixed inset-0 pointer-events-none bg-[radial-gradient(circle_at_50%_0%,rgba(250,204,21,0.1),transparent_70%)] opacity-80" />
+      <div className="fixed inset-0 pointer-events-none bg-[radial-gradient(circle_at_100%_100%,rgba(250,204,21,0.05),transparent_50%)] opacity-60" />
 
       <Navbar onAuditClick={openModal} />
 

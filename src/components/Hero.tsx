@@ -15,31 +15,36 @@ export const Hero: React.FC<HeroProps> = ({ onAuditClick }) => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="lg:col-span-7"
       >
-        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 md:mb-8 border border-indigo-500/30 bg-indigo-500/5 rounded-full font-mono text-[9px] md:text-[10px] text-indigo-400 uppercase tracking-widest">
-          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-          Strategic GRC Advisor & Quality Governance Leader
+        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 md:mb-8 border border-brand/30 bg-brand/5 rounded-full font-mono text-[9px] md:text-[10px] text-brand uppercase tracking-widest">
+          <span className="w-1.5 h-1.5 rounded-full bg-brand animate-pulse" />
+          Firstlink Governance Framework
         </div>
         
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-white leading-[1.1] md:leading-[1.05] mb-6 md:mb-8">
-          Architecting <span className="italic font-serif text-indigo-200">Resilience.</span><br className="hidden sm:block"/>
-          Governing Excellence.
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white leading-[1.1] md:leading-[1.05] mb-6 md:mb-8">
+          Strategic <span className="text-brand">Resilience</span><br className="hidden sm:block"/>
+          for High-Stakes Operations.
         </h1>
         
-        <p className="text-base md:text-xl text-slate-400 max-w-2xl font-light leading-relaxed mb-8 md:mb-10 border-l px-4 border-indigo-500/30">
-          Senior Governance, Risk & Compliance (GRC) leader across aviation, rail and critical infrastructure in the Middle East, with assurance reach into UK and Australia.
+        <p className="text-base md:text-xl text-slate-300 max-w-2xl font-light leading-relaxed mb-8 md:mb-10 border-l px-4 border-brand/50">
+          Firstlink Governance provides executive-level GRC oversight for the world’s most regulated industries. From Aviation to Rail, we bridge the gap between regulatory mandates and institutional excellence.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">
           <button 
-            onClick={onAuditClick}
-            className="group flex items-center justify-center gap-3 bg-white hover:bg-slate-200 text-[#0a0a0a] font-medium px-6 md:px-8 py-3 md:py-4 rounded-sm transition-all duration-300"
+            onClick={() => {
+              const el = document.getElementById('expertise');
+              el?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="group flex items-center justify-center gap-3 bg-brand hover:bg-white text-black font-bold px-6 md:px-8 py-3 md:py-4 rounded-sm transition-all duration-300"
           >
-            Schedule a Strategy Audit
+            View Our Frameworks
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
-          <button className="flex items-center justify-center gap-3 border border-white/10 hover:bg-white/5 text-slate-300 font-medium px-6 md:px-8 py-3 md:py-4 rounded-sm transition-all duration-300">
-            <FileText className="w-4 h-4 text-indigo-400" />
-            Download Profile
+          <button 
+            onClick={onAuditClick}
+            className="flex items-center justify-center gap-3 border border-white/20 hover:bg-white/5 text-white font-medium px-6 md:px-8 py-3 md:py-4 rounded-sm transition-all duration-300"
+          >
+            Book a Strategic Consultation
           </button>
         </div>
       </motion.div>
