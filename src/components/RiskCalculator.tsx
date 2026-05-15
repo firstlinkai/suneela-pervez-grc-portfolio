@@ -71,7 +71,7 @@ export const RiskCalculator: React.FC = () => {
   const percentage = (totalScore / maxPossible) * 100;
 
   const getRecommendation = () => {
-    if (percentage > 80) return { tier: "Tier 3: Fractional CCO", desc: "You have a solid foundation. You now need strategic board-level advisory to optimize and lead digital governance." };
+    if (percentage > 80) return { tier: "Tier 3: Executive Advisory", desc: "You have a solid foundation. You now need strategic board-level advisory to optimize and lead digital governance." };
     if (percentage > 50) return { tier: "Tier 2: Strategic Resilience", desc: "You are operational but have critical gaps. You need integrated management systems and GCAA/Rail readiness programs." };
     return { tier: "Tier 1: Compliance Foundation", desc: "Your governance framework needs an urgent baseline audit. We recommend starting with ISO roadmaps and SOP development." };
   };

@@ -14,8 +14,8 @@ const tiers = [
       "Technical Process Optimization"
     ],
     engagement: "Fixed-Fee / Milestone-Based",
-    investment: "$2,500+",
-    unit: "Minimum Investment",
+    investment: "Outcome‑based fee agreed after a discovery call.",
+    unit: "",
     outcome: "Eliminate repeat findings in core processes."
   },
   {
@@ -30,8 +30,8 @@ const tiers = [
       "Functional Quality Leadership"
     ],
     engagement: "Structured Program / Monthly Blocks",
-    investment: "$3,500+",
-    unit: "Minimum Investment",
+    investment: "Outcome‑based fee agreed after a discovery call.",
+    unit: "",
     recommended: true,
     outcome: "Embed resilient governance across leadership layers."
   },
@@ -41,14 +41,14 @@ const tiers = [
     focus: "High-level risk oversight, GRC architecture, and Board reporting.",
     bestFor: "Board-level decision support and long-term strategic governance alignment.",
     features: [
-      "Fractional CCO Services",
+      "Executive GRC Advisory (CCO‑level support)",
       "Board-Level Risk Reporting",
       "GRC Architecture Design",
       "Three Lines of Defence Model"
     ],
     engagement: "Monthly Strategic Retainer",
-    investment: "$5,000+",
-    unit: "Minimum Investment",
+    investment: "Outcome‑based fee agreed after a discovery call.",
+    unit: "",
     outcome: "Institutionalize quality and reduce non-conformities."
   }
 ];
@@ -58,9 +58,9 @@ export const Services: React.FC = () => {
     <section id="services" className="py-16 md:py-24 max-w-7xl mx-auto px-6">
       <div className="mb-12 md:mb-16">
         <h2 className="font-mono text-[10px] tracking-widest text-slate-500 uppercase mb-4">04 // Service Architecture</h2>
-        <h3 className="font-light text-3xl md:text-4xl text-white">Strategic Engagement & Advisory Models</h3>
+        <h3 className="font-bold text-3xl md:text-4xl text-white italic uppercase tracking-tighter">Strategic <span className="text-brand">Advisory</span> Models</h3>
         <p className="text-slate-400 mt-4 max-w-3xl font-light text-sm md:text-base leading-relaxed">
-          To ensure the highest level of impact, all engagements are bespoke and customized to the client's specific regulatory complexity and organizational scale. Strategic partnerships are structured around high-value outcomes rather than billable hours.
+          All engagements begin with a 30–45 minute strategy discovery call to understand your regulatory context, risk profile and desired outcomes; investment is finalised once this scope is agreed.
         </p>
       </div>
 
@@ -101,8 +101,10 @@ export const Services: React.FC = () => {
             </div>
 
             <div className="pt-6 border-t border-white/5 mt-auto">
-              <div className="font-mono text-[9px] tracking-widest text-slate-500 mb-1 uppercase">Investment</div>
-              <div className="font-light text-xl text-white">{tier.investment} <span className="text-[10px] text-slate-500 uppercase ml-1 tracking-tighter">{tier.unit}</span></div>
+              <div className="font-mono text-[9px] tracking-widest text-brand mb-2 uppercase">Investment</div>
+              <div className="font-light text-sm text-slate-300 leading-relaxed italic">
+                Outcome‑based fee agreed after a discovery call, tailored to regulatory complexity and organisational scale.
+              </div>
             </div>
           </div>
         ))}
