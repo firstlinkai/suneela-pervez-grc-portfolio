@@ -21,8 +21,8 @@ export const Footer: React.FC = () => {
               <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest">Connect for Strategic Advisory</span>
             </div>
             <div className="flex gap-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-xs text-slate-400 hover:text-white transition-colors">LinkedIn</a>
-              <a href="mailto:suneelapervez@gmail.com" className="text-xs text-brand hover:text-white transition-colors">suneelapervez@gmail.com</a>
+              <a href="https://www.linkedin.com/in/suneela-pervez-93535438/" target="_blank" rel="noopener noreferrer" className="text-xs text-slate-400 hover:text-white transition-colors">LinkedIn</a>
+              <a href="mailto:info@firstlinkai.com" className="text-xs text-brand hover:text-white transition-colors">info@firstlinkai.com</a>
             </div>
           </div>
         </div>

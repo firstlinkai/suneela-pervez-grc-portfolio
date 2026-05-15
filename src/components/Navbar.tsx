@@ -77,8 +77,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onAuditClick }) => {
                 Schedule Audit
               </button>
               <div className="pt-4 border-t border-white/5 flex gap-6">
-                <a href="#" className="text-[10px] font-mono uppercase tracking-widest text-slate-500">LinkedIn</a>
-                <a href="#" className="text-[10px] font-mono uppercase tracking-widest text-slate-500">Contact</a>
+                <a href="https://www.linkedin.com/in/suneela-pervez-93535438/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-mono uppercase tracking-widest text-slate-500">LinkedIn</a>
+                <a href="mailto:info@firstlinkai.com" className="text-[10px] font-mono uppercase tracking-widest text-slate-500">Contact</a>
               </div>
             </div>
           </motion.div>

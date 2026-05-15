@@ -7,6 +7,7 @@ import { CaseStudies } from './components/CaseStudies';
 import { Services } from './components/Services';
 import { RiskCalculator } from './components/RiskCalculator';
 import { Sectors } from './components/Sectors';
+import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { AuditModal } from './components/AuditModal';
 
@@ -24,7 +25,7 @@ export default function App() {
 
       <Navbar onAuditClick={openModal} />
 
-      <main className="relative z-10 pt-24 pb-20">
+      <main className="relative z-10 pt-24 pb-10">
         <Hero onAuditClick={openModal} />
         <About />
         <Expertise />
@@ -32,6 +33,7 @@ export default function App() {
         <CaseStudies />
         <RiskCalculator />
         <Services />
+        <Contact />
       </main>
 
       <Footer />
