@@ -30,7 +30,11 @@ export const Footer: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 pt-8">
         <div className="flex items-center gap-3">
-          <div className="w-4 h-4 bg-brand rounded-sm"></div>
+          <img 
+            src="/Firstlink%20Governance%20logo.jpeg" 
+            alt="Firstlink Governance Logo" 
+            className="w-8 h-8 object-contain rounded-sm"
+          />
           <span className="text-xs font-bold tracking-widest text-white uppercase">Firstlink Governance</span>
         </div>
         <div className="font-mono text-[10px] text-slate-500 uppercase tracking-widest">
